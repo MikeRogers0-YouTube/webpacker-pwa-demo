@@ -7489,6 +7489,11 @@ webpack@^4.44.1:
     watchpack "^1.7.4"
     webpack-sources "^1.4.1"
 
+webpacker-pwa@^0.1.2:
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/webpacker-pwa/-/webpacker-pwa-0.1.2.tgz#7b44f6f23383f830206b5c66dc1885ecc34e46d4"
+  integrity sha512-DfKbInyb9Z+p4Bl+9deKJW4MSiQaqcfK24DGJnzq+c2DwzhL6GpnrXHPr7GXcXq4SLnAh4O8u1JhUGay2htkVA==
+
 websocket-driver@>=0.5.1, websocket-driver@^0.7.4:
   version "0.7.4"
   resolved "https://registry.yarnpkg.com/websocket-driver/-/websocket-driver-0.7.4.tgz#89ad5295bbf64b480abcba31e4953aca706f5760"
@@ -7521,6 +7526,39 @@ wide-align@^1.1.0:
   integrity sha512-QGkOQc8XL6Bt5PwnsExKBPuMKBxnGxWWW3fU55Xt4feHozMUhdUMaBCk290qpm/wG5u/RSKzwdAC4i51YigihA==
   dependencies:
     string-width "^1.0.2 || 2"
+
+workbox-cacheable-response@^6.0.2:
+  version "6.0.2"
+  resolved "https://registry.yarnpkg.com/workbox-cacheable-response/-/workbox-cacheable-response-6.0.2.tgz#00b1133c4c846a2874f32ae14206c0636bacfd87"
+  integrity sha512-OrgFiYWkmFXDIbNRYSu+fchcfoZqyJ4yZbdc8WKUjr9v/MghKHfR9u7UI077xBkjno5J3YNpbwx73/no3HkrzA==
+  dependencies:
+    workbox-core "^6.0.2"
+
+workbox-core@^6.0.2:
+  version "6.0.2"
+  resolved "https://registry.yarnpkg.com/workbox-core/-/workbox-core-6.0.2.tgz#2f865cfe633890b4210fd6d6fdb049a6daed0914"
+  integrity sha512-Ksl6qeikGb+BOCILoCUJGxwlEQOeeqdpOnpOr9UDt3NtacPYbfYBmpYpKArw5DFWK+5geBsFqgUUlXThlCYfKQ==
+
+workbox-expiration@^6.0.2:
+  version "6.0.2"
+  resolved "https://registry.yarnpkg.com/workbox-expiration/-/workbox-expiration-6.0.2.tgz#ac01e8d17f48daa31dc0872c09ee6f4d2cf28ccb"
+  integrity sha512-6+nbR18cklAdI3BPT675ytftXPwnVbXGR8mPWNWTJtl5y2urRYv56ZOJLD7FBFVkZ8EjWiRhNP/A0fkxgdKtWQ==
+  dependencies:
+    workbox-core "^6.0.2"
+
+workbox-routing@^6.0.2:
+  version "6.0.2"
+  resolved "https://registry.yarnpkg.com/workbox-routing/-/workbox-routing-6.0.2.tgz#8380bc322a2b1c44978df8ff6ae4e4d723f4e3f8"
+  integrity sha512-iQ9ch3fL1YpztDLfHNURaHQ0ispgPCdzWmZZhtSHUyy/+YkTlIiDVTbOQCIpHIrWlKQiim6X3K2ItIy1FW9+wA==
+  dependencies:
+    workbox-core "^6.0.2"
+
+workbox-strategies@^6.0.2:
+  version "6.0.2"
+  resolved "https://registry.yarnpkg.com/workbox-strategies/-/workbox-strategies-6.0.2.tgz#f4383e2e5d46c1546e6e08048c9f5c9a7beb5137"
+  integrity sha512-HjLnYCVS60U7OKhl5NIq8NAQXrotJQRDakmIONnRlQIlP2If/kAiQSUP3QCHMq4EeXGiF+/CdlR1/bhYBHZzZg==
+  dependencies:
+    workbox-core "^6.0.2"
 
 worker-farm@^1.7.0:
   version "1.7.0"

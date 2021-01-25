@@ -6,6 +6,7 @@ default: &default
   public_root_path: public
   public_output_path: packs
   cache_path: tmp/cache/webpacker
+  service_workers_entry_path: service_workers
   webpack_compile_output: true
 
   # Additional paths webpack should lookup modules

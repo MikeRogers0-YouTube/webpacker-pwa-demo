@@ -40,3 +40,5 @@ group :test do
   gem "selenium-webdriver"
   gem "webdrivers"
 end
+
+gem "webpacker-pwa", "~> 0.1.0", :group => :development

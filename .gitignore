@@ -40,3 +40,7 @@ yarn-debug.log*
 
 # Ignore the vendor bundle
 vendor/bundle/
+
+# Ignoring files added by webpacker-pwa
+/public/*.js
+/public/*.js.map
