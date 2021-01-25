@@ -7,11 +7,11 @@ if ('serviceWorker' in navigator) {
         registration.addEventListener('updatefound', function() {
           console.log('[ServiceWorker Client]', 'updatefound')
 
-          caches.open('documents').then(function(cache) {
-            let links = document.querySelectorAll('a[href^="/"]:not([rel="nofollow"])');
-            cache.addAll( Array.from(links).map(elem => elem.getAttribute("href")) );
-            cache.addAll( [document.location.pathname] );
-          });
+          //caches.open('documents').then(function(cache) {
+            //let links = document.querySelectorAll('a[href^="/"]:not([rel="nofollow"])');
+            //cache.addAll( Array.from(links).map(elem => elem.getAttribute("href")) );
+            //cache.addAll( [document.location.pathname] );
+          //});
 
           caches.open('assets-styles-and-scripts').then(function(cache) {
             let stylesheetLinks = document.querySelectorAll('link[rel="stylesheet"][href^="/"]');

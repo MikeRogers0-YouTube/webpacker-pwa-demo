@@ -5,7 +5,8 @@ import { ExpirationPlugin } from 'workbox-expiration';
 
 // Loading pages (and turbolinks requests), checks the network first
 registerRoute(
-  ({request}) => request.destination === "document" || (
+  ({request}) => (request.destination === "document" && request.method === 'GET') || (
+    request.method === 'GET' &&
     request.destination === "" &&
     request.mode === "cors" &&
     request.headers.get('Turbolinks-Referrer') !== null
