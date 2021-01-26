@@ -13,14 +13,11 @@ registerRoute(
   ),
   new NetworkFirst({
     cacheName: 'documents',
-    networkTimeoutSeconds: 1,
+    networkTimeoutSeconds: 0.25,
     plugins: [
       new ExpirationPlugin({
         maxEntries: 5,
         maxAgeSeconds: 5 * 60, // 5 minutes
-      }),
-      new CacheableResponsePlugin({
-        statuses: [0, 200],
       }),
     ],
   })
@@ -28,17 +25,13 @@ registerRoute(
 
 // For CSS & JS, we check the cache first
 registerRoute(
-  ({request}) => request.destination === "script" ||
-  request.destination === "style",
+  ({request}) => request.destination === "script" || request.destination === "style",
   new CacheFirst({
     cacheName: 'assets-styles-and-scripts',
     plugins: [
       new ExpirationPlugin({
         maxEntries: 5,
         maxAgeSeconds: 60 * 60 * 24 * 30, // 30 Days
-      }),
-      new CacheableResponsePlugin({
-        statuses: [0, 200],
       }),
     ],
   })
@@ -53,9 +46,6 @@ registerRoute(
       new ExpirationPlugin({
         maxEntries: 5,
         maxAgeSeconds: 60 * 60 * 24 * 30, // 30 Days
-      }),
-      new CacheableResponsePlugin({
-        statuses: [0, 200],
       }),
     ],
   })
