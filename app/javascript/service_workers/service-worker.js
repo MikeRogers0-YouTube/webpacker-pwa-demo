@@ -13,7 +13,7 @@ registerRoute(
   ),
   new NetworkFirst({
     cacheName: 'documents',
-    networkTimeoutSeconds: 0.25,
+    networkTimeoutSeconds: 1,
     plugins: [
       new ExpirationPlugin({
         maxEntries: 5,
